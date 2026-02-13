@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewPort">
+    <title></title>
+</head>
+
+<body>
+    <figure>
+        <img src="https://wallpaperaccess.com/full/502235.png" alt="Imagen de Prueba" width="500">
+        <figcaption>
+            Figura 1: Fotografia de prueba
+        </figcaption>
+    </figure>
+
+    <!-- Utiliza principalmente para imagenes responsivas - Permite definir distintas resoluciones segun el tamaño de la pantalla -->
+    <picture>
+        <source srcset="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200"
+            media="(min-width: 768px)">
+        <source srcset="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600"
+            media="(max-width: 767px)">
+
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600"
+            alt="Imagen de prueba con source">
+
+    </picture>
+    <!-- Svg es un vectorial (independientemente del tamaño nunca se pixelea) -->
+    <svg>
+        <circle cx="60" cy="60" r="50" stroke="blue" stroke-width="2" fill="purple"></circle>
+    </svg>
+
+    <!-- Datalist : listar una lista de sugerencias, te da cierto svalores que puedes poner en el input -->
+     <label>
+        Lenguaje Favorito:
+        <input list="languages">
+     </label>
+     <datalist id="languages">
+         <option value="Java"></option>
+         <option value="JavaScript"></option>
+         <option value="Python"></option>
+    </datalist>
+
+    <!-- contenido despegable -->
+     <details>
+        <summary>¿Qué es HTML semántico?</summary>
+        <p>
+            Es el uso de etiquetas que describen el significado del contenido y no solo su apariencia
+        </p>
+     </details>
+
+     <!-- Sirve para cargar videos -->
+     <video controls autoplay muted loop poster="">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+
+        <track kind="subtitles"></track>
+     </video>
+
+     <audio src="https://www.w3schools.com/html/horse.mp3" controls>
+
+     </audio>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_asi-pEL718?si=u-zAsk6K7DEKq4-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <button onclick="abrirModal()">Abrir mensaje</button>
+
+    <dialog id="miDialog">
+        <p>Este es un dialogo html nativo</p>
+        <button onclick="cerrarModal()">Cerrar</button>
+    </dialog>
+
+    <script>
+        function abrirModal(){
+            document.getElementById('miDialog').showModal();
+        }
+        function cerrarModal(){
+            document.getElementById('miDialog').close();
+        }
+    </script>
+</body>
+
+</html>
