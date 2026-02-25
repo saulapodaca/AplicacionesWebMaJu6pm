@@ -4,33 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contacto de Saul apodaca">
+    <meta name="description" content="Contacto de Saul apodaca - Estudiante de Ingeniería en Software">
     <meta name="author" content="Saul Isaac Apodaca Baldenegro">
     <meta name="robots" content="index, follow">
     <title>Contacto | Portafolio Saul Apodaca</title>
-    <link rel="icon" type="image/png" href="fotoPerfil.jpg">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <header>
         <h1 class="nombre-header">Saul Isaac Apodaca Baldenegro</h1>
-        <p class="descripcion-header">Estudiante de Ingenieria en Software</p>
+        <p class="descripcion-header">Estudiante de Ingeniería en Software</p>
 
         <nav class="nav-paginas">
-            <a href="./index.html" class="a1">Home</a> |
-            <a href="./about.html" class="a1">Sobre mi</a> |
-            <a href="./work.html" class="a1">Proyectos</a> |
-            <a href="./skills.html" class="a1">Habilidades</a> |
+            <a href="./index.html" class="a1">Home</a>
+            <a href="./about.html" class="a1">Sobre mi</a>
+            <a href="./work.html" class="a1">Proyectos</a>
+            <a href="./skills.html" class="a1">Habilidades</a>
             <a href="./contact.html" class="a1">Contacto</a>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section id="form-seccion">
             <h2>Formulario de contacto</h2>
 
-            <form action="http://mibackend.com/contacto" method="post">
+            <form action="#" method="post">
 
                 <div class="form-grid">
                     <div class="field">
@@ -41,23 +40,23 @@
                     <div class="field">
                         <label for="email">Correo electrónico:</label>
                         <input type="email" name="email" id="email" placeholder="Ej. usuario@example.com" required
-                            pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">
+                               pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">
                     </div>
 
                     <div class="field">
                         <label for="telefono">Teléfono:</label>
                         <input type="tel" name="telefono" id="telefono" placeholder="10 digitos" required
-                            pattern="[0-9]{10}">
+                               pattern="[0-9]{10}">
                     </div>
 
                     <div class="field">
                         <label for="edad">Edad:</label>
-                        <input type="number" name="edad" id="edad" placeholder="Ej. 21">
+                        <input type="number" name="edad" id="edad" placeholder="Ej. 21" min="15" max="99">
                     </div>
 
                     <div class="field">
                         <label for="fecha">Fecha:</label>
-                        <input type="date" name="fecha" id="fecha">
+                        <input type="date" id="fecha" name="fecha">
                     </div>
 
                     <div class="field">
@@ -72,48 +71,42 @@
 
                 <div class="opciones-contacto">
                     <p><strong>¿Cómo te gustaría que te contacte?</strong></p>
+                    <div class="radio-group">
+                        <label class="radio-item">
+                            <input type="radio" name="contacto" value="Correo" checked>
+                            <span>Correo</span>
+                        </label>
 
-                    <label class="radio-item">
-                        <input type="radio" name="contacto" value="Correo">
-                        <span>Correo</span>
-                    </label>
-
-                    <label class="radio-item">
-                        <input type="radio" name="contacto" value="Whatsapp">
-                        <span>Whatsapp</span>
-                    </label>
+                        <label class="radio-item">
+                            <input type="radio" name="contacto" value="Whatsapp">
+                            <span>Whatsapp</span>
+                        </label>
+                    </div>
                 </div>
 
                 <div class="form-actions">
-                    <button type="submit">Guardar</button>
-                    <button type="reset">Limpiar</button>
+                    <button type="submit" class="btn-primary">Guardar</button>
+                    <button type="reset" class="btn-reset">Limpiar</button>
                 </div>
             </form>
-
         </section>
 
-        <p>
-            Si estás interesado en mi perfil profesional y te gustaría que charláramos sobre una oportunidad laboral,
-            puedes contactarme a través de los siguientes medios.
-        </p>
+        <section id="info-contacto">
+            <p class="texto-invitacion">
+                Si estás interesado en mi perfil profesional y te gustaría que charláramos sobre una oportunidad laboral,
+                puedes contactarme a través de los siguientes medios:
+            </p>
 
-        <section>
-            <p><strong>Ligas de contacto:</strong></p>
             <ul id="ligas-contacto">
-                <li><a class="liga-contacto" href="tel:+526442103531" target="_blank"
-                        rel="noopener noreferrer">Teléfono</a></li>
-                <li><a class="liga-contacto"
-                        href="https://wa.me/526442103531?text=Hola%20Saul,%20que%20tal,%20vi%20tu%20portafolio"
-                        target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
-                <li><a class="liga-contacto" href="mailto:saul.apodaca252020@potros.itson.edu.mx" target="_blank"
-                        rel="noopener noreferrer">Email</a></li>
+                <li><a class="liga-contacto" href="tel:+526442103531" target="_blank" rel="noopener noreferrer">Teléfono</a></li>
+                <li><a class="liga-contacto" href="https://wa.me/526442103531?text=Hola%20Saul" target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
+                <li><a class="liga-contacto" href="mailto:saul.apodaca252020@potros.itson.edu.mx" target="_blank" rel="noopener noreferrer">Email</a></li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Saul Isaac Apodaca Baldenegro. Todos los derechos reservados</p>
+        <p>&copy; 2026 Saul Isaac Apodaca Baldenegro. Todos los derechos reservados.</p>
     </footer>
 </body>
-
 </html>

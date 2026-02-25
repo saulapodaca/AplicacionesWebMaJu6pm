@@ -1,0 +1,105 @@
+/* ============================
+   IMPORTACIÓN DE FUENTES
+   ============================ */
+
+/* Importa la fuente Quicksand desde Google Fonts 
+   Disponible en pesos de 300 a 700 */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Importa la fuente Alan Sans 
+   Disponible en pesos de 300 a 900 */
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+
+/* ============================
+   VARIABLES GLOBALES
+   ============================ */
+
+/* :root representa el elemento <html>.
+   Aquí definimos variables CSS globales
+   que pueden reutilizarse en todo el proyecto. */
+
+:root {
+    --bg-color-dark: #0f172a;
+    /* Color de fondo modo oscuro */
+    --text-color-dark: #f8fafc;
+    /* Color principal del texto */
+    --links-color-dark: #c084fc;
+    /* Color normal de enlaces */
+    --links-hover-dark: #e9d5ff;
+    /* Color cuando el mouse pasa encima */
+    --nav-links: #818cf8;
+    /* Color específico para navegación */
+    --highlight: #22c55e;
+    /* Color para resaltar elementos */
+    --card-border: #1e293b;
+    /* Color para las tarjeras de proyectos */
+}
+
+
+/* ============================
+   RESET BÁSICO DE ESTILOS
+   ============================ */
+
+/* Eliminamos márgenes y padding por defecto
+   del navegador para tener mayor control visual */
+
+
+body {
+    background-color: var(--bg-color-dark) !important;
+    color: var(--text-color-dark);
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+main,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ============================
+   ESTILOS PARA ENLACES
+   ============================ */
+
+/* Aplicamos color usando variable CSS
+   y quitamos el subrayado por defecto */
+
+a {
+    color: var(--links-color-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Recomendado: agregar estado hover
+   para mejorar la experiencia del usuario */
+
+a:hover {
+    color: var(--links-hover-dark);
+    text-shadow: 0 0 8px var(--links-color-dark);
+}
+
+/* Boton primario, es el que se estará reutilizando */
+.btn-primary {
+    background-color: var(--highlight);
+    color: var(--bg-color-dark);
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+/* Estilo base para contenedores */
+.card {
+    background-color: #1e293b;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}

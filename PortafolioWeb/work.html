@@ -1,88 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Proyectos de Saul Apodaca">
-  <meta name="author" content="Saul Isaac Apodaca Baldenegro">
-  <meta name="robots" content="index, follow">
-
-  <title>Proyectos | Portafolio Saul Apodaca</title>
-
-  <link rel="icon" type="image/png" href="fotoPerfil.jpg">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyectos de ingeniería de software de Saul Apodaca">
+    <title>Proyectos | Portafolio Saul Apodaca</title>
+    <link rel="icon" type="image/png" href="fotoPerfil.jpg">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
-  <header>
-    <h1 class="nombre-header">Saul Isaac Apodaca Baldenegro</h1>
-    <p class="descripcion-header">Estudiante de Ingenieria en Software</p>
+    <header>
+        <h1 class="nombre-header">Saul Isaac Apodaca Baldenegro</h1>
+        <p class="descripcion-header">Estudiante de Ingeniería en Software</p>
+        <nav class="nav-paginas">
+            <a href="./index.html" class="a1">Home</a>
+            <a href="./about.html" class="a1">Sobre mi</a>
+            <a href="./work.html" class="a1">Proyectos</a>
+            <a href="./skills.html" class="a1">Habilidades</a>
+            <a href="./contact.html" class="a1">Contacto</a>
+        </nav>
+    </header>
 
-    <nav class="nav-paginas">
-      <a href="./index.html" class="a1">Home</a> |
-      <a href="./about.html" class="a1">Sobre mi</a> |
-      <a href="./work.html" class="a1">Proyectos</a> |
-      <a href="./skills.html" class="a1">Habilidades</a> |
-      <a href="./contact.html" class="a1">Contacto</a>
-    </nav>
-  </header>
+    <main>
+        <section class="proyectos-container">
+            <h2 class="titulo-seccion">Mis Proyectos</h2>
+            
+            <div class="proyectos-grid">
+                <article class="card proyecto-card">
+                    <div class="card-header">
+                        <span class="tag">Java</span>
+                        <span class="tag">NoSQL</span>
+                    </div>
+                    <h3>Gestión de Cine</h3>
+                    <p>Desarrollo de un sistema con <strong>arquitectura en 3 capas</strong> para la administración de salas y funciones.</p>
+                    <a href="https://github.com/saulapodaca/SistemaCinema" target="_blank" class="btn-repo">Ver en GitHub</a>
+                </article>
 
-  <main>
-    <section>
-      <h2>Mis Proyectos</h2>
+                <article class="card proyecto-card">
+                    <div class="card-header">
+                        <span class="tag">Java</span>
+                        <span class="tag">NoSQL</span>
+                    </div>
+                    <h3>Biblioteca Musical</h3>
+                    <p>Aplicación robusta que utiliza <strong>3 capas</strong> para gestionar colecciones de música a gran escala.</p>
+                    <a href="https://github.com/saulapodaca/BDASistemaBibliotecaMusical" target="_blank" class="btn-repo">Ver en GitHub</a>
+                </article>
 
-      <article>
-        <h3>Sistema de Gestión para un Cine</h3>
-        <p>
-          Proyecto desarrollado en Java con arquitectura en 3 capas
-          y base de datos NoSQL.
-        </p>
-        <a class="liga-contacto"
-           href="https://github.com/saulapodaca/SistemaCinema"
-           target="_blank"
-           rel="noopener noreferrer">
-           Ver código en GitHub
-        </a>
-      </article>
+                <article class="card proyecto-card">
+                    <div class="card-header">
+                        <span class="tag">MVC</span>
+                        <span class="tag">Escolar</span>
+                    </div>
+                    <h3>Uno Spin</h3>
+                    <p>Implementación del juego clásico utilizando el patrón <strong>Modelo-Vista-Controlador (MVC)</strong>.</p>
+                    <a href="https://github.com/Yizbin/UNO-Arquitectura" target="_blank" class="btn-repo">Ver en GitHub</a>
+                     <span class="proximamente">En desarrollo</span>
+                </article>
 
-      <br>
+                <article class="card proyecto-card">
+                    <div class="card-header">
+                        <span class="tag">Gestión</span>
+                        <span class="tag">SIGOPSA</span>
+                    </div>
+                    <h3>Gestión de Pastelería</h3>
+                    <p>Sistema integral para la gestión operativa de una pastelería sin azúcar.</p>
+                    <span class="proximamente">En desarrollo</span>
+                </article>
+            </div>
+        </section>
+    </main>
 
-      <article>
-        <h3>Sistema de Biblioteca Musical</h3>
-        <p>
-          Proyecto desarrollado en Java con arquitectura en 3 capas
-          y base de datos NoSQL.
-        </p>
-        <a class="liga-contacto"
-           href="https://github.com/saulapodaca/BDASistemaBibliotecaMusical"
-           target="_blank"
-           rel="noopener noreferrer">
-           Ver código en GitHub
-        </a>
-      </article>
-
-      <br>
-
-      <article>
-        <h3>Uno Spin</h3>
-        <p>
-          Actualmente me encuentro desarrollando el juego del
-          <em>"Uno Spin"</em> como proyecto escolar,
-          utilizando arquitectura <strong>MVC clásico</strong>.
-        </p>
-        <a class="liga-contacto"
-           href="https://github.com/Yizbin/UNO-Arquitectura"
-           target="_blank"
-           rel="noopener noreferrer">
-           Ver código en GitHub
-        </a>
-      </article>
-
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Saul Isaac Apodaca Baldenegro. Todos los derechos reservados</p>
-  </footer>
+    <footer>
+        <p>&copy; 2026 Saul Isaac Apodaca Baldenegro. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
